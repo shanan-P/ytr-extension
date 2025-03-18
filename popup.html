@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Ratioed</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YouTube Ratioed</h1>
+      <p class="description">Find videos with high like-to-view ratios</p>
+    </header>
+    
+    <div class="settings-section">
+      <h2>Settings</h2>
+      
+      <div class="form-group">
+        <label for="api-key">YouTube API Key</label>
+        <input type="text" id="api-key" placeholder="Enter your YouTube API key">
+        <span class="help-text">Get a key from <a href="https://console.developers.google.com/" target="_blank">Google Cloud Console</a></span>
+      </div>
+
+      <div class="form-group">
+        <label for="min-ratio">Minimum Ratio (%)</label>
+        <input type="number" id="min-ratio" min="0" step="0.1" placeholder="0.5">
+        <span class="help-text">Minimum like-to-view ratio percentage</span>
+      </div>
+      
+      <div class="form-group">
+        <label for="max-results">Max Results</label>
+        <input type="number" id="max-results" min="1" placeholder="50">
+        <span class="help-text">Maximum number of videos to process</span>
+      </div>
+      
+      <div class="form-group radio-group-container">
+        <label class="radio-group-label">Ratio Display</label>
+        <div class="radio-options">
+          <div class="radio-option">
+            <input type="radio" id="enabled-true" name="enabled" value="true" checked>
+            <label for="enabled-true">Enabled</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="enabled-false" name="enabled" value="false">
+            <label for="enabled-false">Disabled</label>
+          </div>
+        </div>
+        <span class="help-text">Show/hide ratio in video titles</span>
+      </div>
+      
+      <button id="save-settings" class="btn primary">Save Settings</button>
+    </div>
+    
+    <div class="action-section">
+      <button id="scan-page" class="btn secondary">Scan Page</button>
+      <button id="clear-ratios" class="btn warning">Clear Ratios</button>
+      <div id="status" class="status"></div>
+    </div>
+    
+    <div id="info-section" class="info-section">
+      <!-- Dynamic content will be inserted here -->
+    </div>
+    
+    <footer>
+      <p>YouTube Ratioed v1.2</p>
+    </footer>
+  </div>
+  
+  <script src="js/popup.js"></script>
+</body>
+</html> 
