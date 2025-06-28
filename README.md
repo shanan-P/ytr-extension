@@ -85,6 +85,24 @@ Feel free to modify any of the code to suit your needs. The main files you might
 - `popup.html` and `popup.css`: Change the UI appearance
 - `manifest.json`: Update permissions or metadata
 
+# Privacy Policy
+
+This privacy policy explains how the YouTube Ratioed extension uses and protects any information that you give when you use this extension.
+
+## Permissions Justification
+
+### storage
+
+This permission is used to save the user's settings, such as the preferred ratio type (comments-to-views or likes-to-views), the minimum ratio threshold, and the maximum number of results to display.
+
+### tabs
+
+This permission is used to open a new tab when the user clicks on a video in the extension's popup.
+
+### host_permissions
+
+This permission is required to access the content of YouTube and Google search pages. This allows the extension to scrape the necessary data to calculate and display the video ratios.
+
 ## License
 
 MIT License 
