@@ -14,9 +14,9 @@ A Chrome extension that identifies and highlights YouTube videos with high engag
 
 ## Installation
 
-### Option 1: Install from Chrome Web Store (Coming Soon)
+### Option 1: Install from Chrome Web Store
 
-*Note: This extension is not yet available on the Chrome Web Store. Once published, installation instructions will be updated.*
+- https://chromewebstore.google.com/detail/youtube-ratioed/bbhmpaaiemkafjinpjbngfpkmdallgje
 
 ### Option 2: Install in Developer Mode
 
